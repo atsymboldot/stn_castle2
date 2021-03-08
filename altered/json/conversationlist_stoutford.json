@@ -1,0 +1,33 @@
+[
+    {
+        "id":"stoutford_thief_0",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"stoutford_thief_rumblings20_0",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"rumblings",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"farrik",
+                        "value":70
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"rumblings",
+                        "value":60,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"stoutford_thief_initial_0"
+            }
+        ]
+    }
+]

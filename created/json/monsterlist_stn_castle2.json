@@ -1,0 +1,16 @@
+[
+    {
+        "id":"test_guy",
+        "name":"Stoutford test guy",
+        "iconID":"monsters_tometik2:44",
+        "monsterClass":"humanoid",
+        "phraseID":"test_guy1"
+    },
+    {
+        "id":"stoutford_southguard_1",
+        "name":"Stoutford guard",
+        "iconID":"monsters_tometik7:71",
+        "monsterClass":"humanoid",
+        "phraseID":"stoutford_southguard_1"
+    }
+]

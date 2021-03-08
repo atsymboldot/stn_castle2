@@ -1,0 +1,43 @@
+[
+    {
+        "id":"stoutford_old_woman",
+        "message":"So young and already hanging around in taverns?",
+        "replies":[
+            {
+                "text":"No, I am looking for my brother Andor. Maybe you have seen him?",
+                "nextPhraseID":"stoutford_old_woman_10"
+            },
+            {
+                "text":"At least I am not drinking whole bottles on my own, like that guy at the next table.",
+                "nextPhraseID":"stoutford_old_woman_20",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"castle_repair",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"stoutford_guard4",
+        "replies":[
+            {
+                "nextPhraseID":"stoutford_guard4a",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":20,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"stoutford_guard4b"
+            }
+        ]
+    }
+]

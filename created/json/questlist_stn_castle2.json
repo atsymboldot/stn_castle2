@@ -1,0 +1,17 @@
+[
+    {
+        "id":"castle_repair",
+        "name":"Castle repairs",
+        "showInLog":1,
+        "stages":[
+            {
+                "progress":1,
+                "logText":"The Stoutford castle has been repaired."
+            },
+            {
+                "progress":11,
+                "logText":"Under on west side"
+            }
+        ]
+    }
+]
