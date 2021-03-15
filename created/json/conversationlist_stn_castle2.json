@@ -156,6 +156,16 @@
                 "rewardType":"removeSpawnArea",
                 "rewardID":"stn_colonel",
                 "mapName":"waytogalmore0"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"borlag2",
+                "mapName":"waytogalmore1"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"berbane2",
+                "mapName":"stoutford_castle0"
             }
         ]
     },

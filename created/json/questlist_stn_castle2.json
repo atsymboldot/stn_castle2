@@ -1,7 +1,7 @@
 [
     {
         "id":"castle_repair",
-        "name":"Castle repairs",
+        "name":"Castle repairs [TODO NONDISPLAY]",
         "showInLog":1,
         "stages":[
             {

@@ -321,7 +321,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup name="Spawn">
   <object name="erwyn_soldier" type="spawn" x="448" y="704" width="416" height="64">
    <properties>
     <property name="spawngroup" value="erwyn_soldier"/>
@@ -427,6 +427,12 @@
     <property name="active" value="false"/>
     <property name="ignoreAreas" value="true"/>
     <property name="spawngroup" value="stn_gyra1"/>
+   </properties>
+  </object>
+  <object name="borlag2" type="spawn" x="416" y="288" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="stoutford_commander"/>
    </properties>
   </object>
  </objectgroup>
