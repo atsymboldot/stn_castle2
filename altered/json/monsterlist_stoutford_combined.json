@@ -1,0 +1,9 @@
+[
+    {
+        "id":"stoutford_commander",
+        "name":"Borlag",
+        "iconID":"monsters_ld1:41",
+        "spawnGroup":"stoutford_commander",
+        "phraseID":"stoutford_commander_select"
+    }
+]

@@ -220,5 +220,283 @@
     {
         "id":"stoutford_southguard_1",
         "message":"The creatures out here are the stuff of nightmares, kid. We're duty-bound to protect the people of Stoutford from them, but don't expect a search party if you go looking for trouble."
+    },
+    {
+        "id":"berbane2_10",
+        "message":"Ah, my trainee! I've been expecting you. Come, we have much to discuss.",
+        "replies":[
+            {
+                "nextPhraseID":"berbane2_20"
+            }
+        ]
+    },
+    {
+        "id":"stoutford_commander_select",
+        "replies":[
+            {
+                "nextPhraseID":"stoutford_commander2_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"castle_repair",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"stoutford_commander"
+            }
+        ]
+    },
+    {
+        "id":"stoutford_commander2_10",
+        "message":"Leave me alone. I'm the commander of Stoutford's defenses. I don't have time to babysit children like you.",
+        "replies":[
+            {
+                "text":"Really? Why did I have to clear the undead from the castle, then?",
+                "nextPhraseID":"stoutford_commander2_x"
+            }
+        ]
+    },
+    {
+        "id":"stoutford_commander2_x",
+        "message":"Naughty child! Get out of my sight!"
+    },
+    {
+        "id":"berbane2_20",
+        "message":"First, in recognition of your efforts against Lord Erwyn, I have decided to promote you to the rank of Junior Ambassador. It's clear that you could flourish under my guidance. I intend to reward you with my mentorship.",
+        "replies":[
+            {
+                "text":"What an honor! Thank you, my Lord.",
+                "nextPhraseID":"berbane2_30"
+            },
+            {
+                "text":"So what?",
+                "nextPhraseID":"berbane2_30"
+            },
+            {
+                "text":"You just want me to do more of your dirty work. No thanks.",
+                "nextPhraseID":"berbane2_20b"
+            }
+        ]
+    },
+    {
+        "id":"berbane2_select",
+        "replies":[
+            {
+                "nextPhraseID":"berbane2_70",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bourbon_ambassador_1",
+                        "value":4
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"berbane2_60",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bourbon_ambassador_1",
+                        "value":4,
+                        "negate":false
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"berbane2_10"
+            }
+        ]
+    },
+    {
+        "id":"berbane2_30",
+        "message":"Now, down to business. Your first official act as my Junior Ambassador will help revitalise the local economy of Stoutford. Complete this task, and you will be hailed as a true Hero of Stoutford. And who knows? You may even rise through the ranks and find yourself with a promotion!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"berbane2_40"
+            }
+        ]
+    },
+    {
+        "id":"berbane2_20b",
+        "message":"Ah, my child, I understand that you hesitate to accept such honor! I admire your humility. However, I must insist. I have an excellent eye for talent, and I know that your future is bright.",
+        "replies":[
+            {
+                "text":"Sigh.",
+                "nextPhraseID":"berbane2_30"
+            }
+        ]
+    },
+    {
+        "id":"berbane2_40",
+        "message":"In recent days, Stoutford has fallen on hard times. Monsters, undead, and disasters have crippled the local infrastructure. The local tavern carries only a meager selection of unappetizing provisions. This presents a unique opportunity for us. You will travel across the land and bring samples of various drinks to me. There's Blackwater brew...Remgard rum...Brimhaven brew...oh, and the wine of Castle Guynmart is delightful, I hear! Five bottles of each should suffice.",
+        "replies":[
+            {
+                "text":"I understand.",
+                "nextPhraseID":"berbane2_50"
+            },
+            {
+                "text":"Is this for Stoutford's economy or for your private collection?",
+                "nextPhraseID":"berbane2_40b"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bourbon_ambassador_1",
+                "value":2
+            }
+        ]
+    },
+    {
+        "id":"berbane2_50",
+        "message":"There may be other brews out there, as well. If you find any, feel free to bring them here. The more effort you apply in this search, the better the results will be for Stoutford, I'm sure!",
+        "replies":[
+            {
+                "text":"Sure.",
+                "nextPhraseID":"berbane2_60"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bourbon_ambassador_1",
+                "value":4
+            }
+        ]
+    },
+    {
+        "id":"berbane2_40b",
+        "message":"Ah, funny child! My life is one of service to Stoutford, and I would not abuse that position for personal gain. This endeavor is merely for market research. It is just the start of what will become a profitable trade agreement.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"berbane2_50"
+            }
+        ]
+    },
+    {
+        "id":"berbane2_60",
+        "message":"Off you go, young Junior Ambassador. Waste no time with those drinks. The people of Stoutford deserve respite from their suffering."
+    },
+    {
+        "id":"berbane2_70",
+        "message":"My Junior Ambassador returns! I hope you bring some of the products we discussed?",
+        "replies":[
+            {
+                "text":"I've brought five bottles of Guynmart's wine.",
+                "nextPhraseID":"berbane2_70_11",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bourbon_ambassador_1",
+                        "value":11,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"guynmart_wine",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "text":"I've brought five bottles of Blackwater brew.",
+                "nextPhraseID":"berbane2_70_12",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bourbon_ambassador_1",
+                        "value":12,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"bwm_brew",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "text":"I've brought five bottles of Brimhaven brew.",
+                "nextPhraseID":"berbane2_70_13",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bourbon_ambassador_1",
+                        "value":13,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_brew",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "text":"I've brought five bottles of Remgard rum.",
+                "nextPhraseID":"berbane2_70_14",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bourbon_ambassador_1",
+                        "value":14,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"remgard_rum",
+                        "value":5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"berbane2_70_11",
+        "message":"Excellent, excellent! This will do nicely. I'll begin studying these samples right away.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bourbon_ambassador_1",
+                "value":11
+            }
+        ]
+    },
+    {
+        "id":"berbane2_70_12",
+        "message":"Marvelous! Leave them on the table here.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bourbon_ambassador_1",
+                "value":12
+            }
+        ]
+    },
+    {
+        "id":"berbane2_70_13",
+        "message":"Oh, delightful! I'll take those off your hands. Your service to Stoutford is greatly appreciated.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bourbon_ambassador_1",
+                "value":13
+            }
+        ]
+    },
+    {
+        "id":"berbane2_70_14",
+        "message":"Ah, it smells heavenly! Hand it over.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bourbon_ambassador_1",
+                "value":14
+            }
+        ]
     }
 ]

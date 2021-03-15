@@ -13,5 +13,40 @@
                 "logText":"Under on west side"
             }
         ]
+    },
+    {
+        "id":"bourbon_ambassador_1",
+        "name":"In good spirits",
+        "showInLog":1,
+        "stages":[
+            {
+                "progress":2,
+                "logText":"Lord Berbane of Stoutford Castle has granted me the title of Junior Ambassador. As my first mission, I must bring him a sampling of drinks from across the lands. Berbane claims that this will help to revitalize Stoutford's economy somehow."
+            },
+            {
+                "progress":4,
+                "logText":"Lord Berbane also mentioned that if I find any other interesting brews, I could bring them to him as well."
+            },
+            {
+                "progress":11,
+                "logText":"I've given wine from Castle Guynmart to Lord Berbane.",
+                "rewardExperience":1000
+            },
+            {
+                "progress":12,
+                "logText":"I've given Blackwater brew to Lord Berbane.",
+                "rewardExperience":1000
+            },
+            {
+                "progress":13,
+                "logText":"I've given Brimhaven brew to Lord Berbane.",
+                "rewardExperience":1000
+            },
+            {
+                "progress":14,
+                "logText":"I've given Remgard rum to Lord Berbane.",
+                "rewardExperience":1000
+            }
+        ]
     }
 ]

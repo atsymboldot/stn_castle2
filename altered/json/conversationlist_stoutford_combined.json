@@ -39,5 +39,53 @@
                 "nextPhraseID":"stoutford_guard4b"
             }
         ]
+    },
+    {
+        "id":"berbane",
+        "replies":[
+            {
+                "nextPhraseID":"berbane2_select",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"castle_repair",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"berbane_200",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":45
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"berbane_90",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_quest_gyra",
+                        "value":90
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"berbane_100",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stn_nondisplay",
+                        "value":44
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"berbane_10"
+            }
+        ]
     }
 ]

@@ -1,0 +1,15 @@
+[
+    {
+        "id":"remgard_rum",
+        "iconID":"items_misc_6:23",
+        "name":"Remgard rum",
+        "displaytype":"ordinary",
+        "category":"drink",
+        "useEffect":{
+            "increaseCurrentHP":{
+                "min":1,
+                "max":3
+            }
+        }
+    }
+]
